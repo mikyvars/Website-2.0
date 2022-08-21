@@ -13,6 +13,9 @@ function Navigation() {
                 <NavLink to="/project/hot-takes" className={(nav) => (nav.isActive ? 'nav-active hover' : 'hover')}>
                     hot takes
                 </NavLink>
+                <NavLink to="/project/booki" className={(nav) => (nav.isActive ? 'nav-active hover' : 'hover')}>
+                    booki
+                </NavLink>
                 <NavLink to="/contact" className={(nav) => (nav.isActive ? 'nav-active hover' : 'hover')}>
                     contact
                 </NavLink>

@@ -8,11 +8,19 @@ export const projectsData = {
         infos: "Création d'un réseau social d'entreprise.",
     },
     'hot-takes': {
-        title: 'HotTakes',
+        title: 'Hot Takes',
         date: 'Juin 2022',
         languages: ['NodeJS', 'Express', 'Mongoose'],
         imgUrl: '/assets/img/projects/hot-takes.jpg',
         imgAlt: "Page d'accueil de HotTakes",
         infos: "Création d'une API sécurisée pour une application d'avis gastronomiques.",
+    },
+    booki: {
+        title: 'Booki',
+        date: 'Decembre 2021',
+        languages: ['HTML5', 'CSS3'],
+        imgUrl: '/assets/img/projects/booki.jpg',
+        imgAlt: "Page d'accueil de Booki",
+        infos: "Transformation d'une maquette en site web avec HTML5 et CSS3.",
     },
 }
