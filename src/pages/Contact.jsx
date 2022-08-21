@@ -5,6 +5,22 @@ import { motion } from 'framer-motion'
 
 function Contact() {
     const form = useRef()
+    const variants = {
+        initial: {
+            opacity: 0,
+            y: 100,
+            transition: { duration: 0.5 },
+        },
+        animate: {
+            opacity: 1,
+            y: 0,
+        },
+        exit: {
+            opacity: 0,
+            y: -100,
+            transition: { duration: 0.3 },
+        },
+    }
 
     const handleSubmit = (event) => {
         event.preventDefault()
@@ -31,7 +47,7 @@ function Contact() {
     return (
         <main className="main-content">
             <Navigation />
-            <div className="contact-container">
+            <motion.div className="contact-container" initial="initial" animate="animate" exit="exit" variants={variants}>
                 <h1>me contacter</h1>
                 <form ref={form} onSubmit={handleSubmit} className="form">
                     <label htmlFor="from_name">Nom</label>
@@ -52,7 +68,7 @@ function Contact() {
                     </button>
                 </form>
                 <div className="form-message"></div>
-            </div>
+            </motion.div>
         </main>
     )
 }
