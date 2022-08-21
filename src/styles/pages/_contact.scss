@@ -1,0 +1,33 @@
+.contact-container {
+    width: 500px;
+    margin: 0 auto;
+    color: $color-secondary;
+
+    h1 {
+        text-align: center;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input[type='submit'] {
+            width: 100px;
+            padding: 5px 0;
+        }
+    }
+
+    .form-message {
+        .success {
+            color: green;
+        }
+
+        .error {
+            color: red;
+        }
+    }
+}

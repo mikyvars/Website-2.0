@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import Project from './pages/Project'
 import './styles/index.scss'
 
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
+const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
     <BrowserRouter>
         <Routes>

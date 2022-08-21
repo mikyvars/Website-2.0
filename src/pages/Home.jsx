@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 import Navigation from '../components/Navigation'
 
-function Home(): ReactElement {
+function Home() {
     return (
         <main className="main-content">
             <Navigation />
