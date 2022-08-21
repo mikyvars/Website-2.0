@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import Navigation from '../components/Navigation'
+import { motion } from 'framer-motion'
 
 function Contact() {
     const form = useRef()
@@ -45,7 +46,10 @@ function Contact() {
                     <textarea name="message" id="message" required></textarea>
                     <br />
 
-                    <input type="submit" value="Envoyer" />
+                    <button type="submit" className="form-submit">
+                        <i className="fa-solid fa-paper-plane"></i>
+                        Envoyer
+                    </button>
                 </form>
                 <div className="form-message"></div>
             </div>
