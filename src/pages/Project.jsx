@@ -6,7 +6,6 @@ import { projectsData } from '../data/projectsData'
 function Project() {
     const { projectName } = useParams()
     const currentData = projectsData[projectName]
-    console.log(currentData)
 
     return (
         <main className="main-content">
