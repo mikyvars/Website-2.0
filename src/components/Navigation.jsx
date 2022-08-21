@@ -16,6 +16,9 @@ function Navigation() {
                 <NavLink to="/project/booki" className={(nav) => (nav.isActive ? 'nav-active hover' : 'hover')}>
                     booki
                 </NavLink>
+                <NavLink to="/cv" className={(nav) => (nav.isActive ? 'nav-active hover' : 'hover')}>
+                    cv
+                </NavLink>
                 <NavLink to="/contact" className={(nav) => (nav.isActive ? 'nav-active hover' : 'hover')}>
                     contact
                 </NavLink>
