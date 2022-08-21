@@ -1,0 +1,13 @@
+.navigation-content {
+    margin: 0;
+    padding: 20px;
+    list-style-type: none;
+    color: $color-secondary;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .nav-active {
+        color: rgb(122, 122, 122);
+    }
+}
