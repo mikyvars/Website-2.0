@@ -30,7 +30,7 @@ function Project({ projectName }) {
                 <div className="project-header">
                     <h1>{currentData.title}</h1>
                     <h2>{currentData.description}</h2>
-                    <div style={{ display: 'flex' }}>
+                    <div className="project-languages">
                         {currentData.languages.map((item, index) => (
                             <p key={index} style={{ marginRight: '10px' }}>
                                 {index === currentData.languages.length - 1 ? item : item + ','}
