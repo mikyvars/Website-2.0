@@ -27,14 +27,20 @@ function Project({ projectName }) {
             <Cursor />
             <Navigation />
             <motion.div className="project-container" initial="initial" animate="animate" exit="exit" variants={variants}>
-                <img src={currentData.imgUrl} alt={currentData.imgAlt} />
-                <div className="project-infos">
+                <div className="project-header">
                     <h1>{currentData.title}</h1>
-                    <h2>{currentData.infos}</h2>
-                    <h3>> Technologies utilisées:</h3>
-                    {currentData.languages.map((item, index) => (
-                        <p key={index}>{item}</p>
-                    ))}
+                    <h2>{currentData.description}</h2>
+                    <div style={{ display: 'flex' }}>
+                        {currentData.languages.map((item, index) => (
+                            <p key={index} style={{ marginRight: '10px' }}>
+                                {index === currentData.languages.length - 1 ? item : item + ','}
+                            </p>
+                        ))}
+                    </div>
+                </div>
+                <div className="project-body">
+                    <img src={currentData.imgUrl} alt={currentData.imgAlt} />
+                    <p>{currentData.infos}</p>
                 </div>
             </motion.div>
         </main>
