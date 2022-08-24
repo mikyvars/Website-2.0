@@ -13,16 +13,16 @@
         color: rgb(122, 122, 122);
     }
 
-    &:after {
-        content: '';
-        border-radius: 50%;
-        position: absolute;
-        border: 1px solid $color-tertiary;
-        animation: circleAnimation 26s infinite alternate;
-        height: 300px;
-        width: 300px;
-        left: -75px;
-        bottom: 75px;
-        z-index: 1;
-    }
+    // &:after {
+    //     content: '';
+    //     border-radius: 50%;
+    //     position: absolute;
+    //     border: 1px solid $color-tertiary;
+    //     animation: circleAnimation 26s infinite alternate;
+    //     height: 300px;
+    //     width: 300px;
+    //     left: -75px;
+    //     bottom: 75px;
+    //     z-index: 1;
+    // }
 }

@@ -1,6 +1,7 @@
 .project-container {
-    max-width: 1200px;
+    width: fit-content;
     margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -32,23 +33,34 @@
 
     img {
         height: auto;
-        width: auto;
-        max-height: 400px;
         max-width: 700px;
         border: 3px solid $color-primary;
         border-radius: 10px;
     }
 }
 
-@media (max-width: $bp-desktop) {
+@media (max-width: $bp-laptop) {
     .project-container {
-        width: fit-content;
         .project-body {
             flex-direction: column;
+
+            img {
+                width: fit-content;
+            }
 
             p {
                 margin: 10px 0 0 0;
             }
         }
     }
+}
+
+@media (max-width: $bp-tablet) {
+    // .project-container {
+    //     .project-body {
+    //         img {
+    //             width: 90%;
+    //         }
+    //     }
+    // }
 }
