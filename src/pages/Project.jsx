@@ -42,6 +42,20 @@ function Project({ projectName }) {
                     <img src={currentData.imgUrl} alt={currentData.imgAlt} />
                     <p>{currentData.infos}</p>
                 </div>
+                <div className="project-footer">
+                    {currentData.pageUrl && (
+                        <a href="https://mikyvars.github.io/OC_Booki/" target="_blank" rel="noreferrer">
+                            <i className="fa-solid fa-link"></i>
+                            Site
+                        </a>
+                    )}
+                    {currentData.codeUrl && (
+                        <a href="https://github.com/mikyvars/OC_Booki" target="_blank" rel="noreferrer">
+                            <i className="fa-solid fa-link"></i>
+                            Code source
+                        </a>
+                    )}
+                </div>
             </motion.div>
         </main>
     )
